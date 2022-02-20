@@ -1,0 +1,91 @@
+.forms {
+    margin: 3rem auto;
+    width: 300px;
+    height: 450px;
+    background-color: rgb(218, 232, 250);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.text {
+    font-size: 30px;
+    color: rgb(29, 29, 201);
+}
+.form {
+    margin: 2rem 0;
+    transition: all 0.3s;
+}
+.form-label {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(46, 29, 143);
+    display: block;
+    opacity: 1;
+    transform: translateY(-1.25em);
+    transform-origin: 0 0;
+    transition: all 0.3s;
+    text-align: start;
+    margin-left: 10px;
+}
+.form-input {
+    box-shadow: none;
+    background-color: rgb(250, 250, 250);
+    border-radius: 0px;
+    border-style: none none solid none;
+    width: 100%;
+    transition: all 0.5s;
+    padding: 5px;
+    font-size: 17px;
+}
+.form-input::placeholder {
+    color: transparent;
+}
+.form-input:focus {
+    box-shadow: none;
+    outline: none;
+    border-color: rgb(11, 60, 223);
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
+    transform: translateY(-2.9em) scale(0.9);
+}
+.form:focus-within {
+    transform: scale(1.05, 1.05);
+}
+.btn {
+    width: 120px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(84, 87, 238);
+    color: white;
+    margin-bottom: 30px;
+}
+.form.invalid input {
+    border-color: rgb(231, 14, 159);
+}
+.btn:disabled,
+.btn:focus:disabled,
+.btn:hover:disabled,
+.btn:active:disabled {
+    background: rgb(23, 37, 228);
+    border-color: #ccc;
+    color: #fcfcfc;
+    cursor: not-allowed;
+}
+.error {
+    color: red;
+    font-size: 20px;
+}
+.questinon {
+    font-size: 10px;
+    color: rgb(23, 37, 228);
+}
+.come {
+    color: rgb(238, 135, 135);
+}
