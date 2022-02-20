@@ -1,9 +1,10 @@
 import React from 'react'
+import css from './Login.module.css'
 
 const Login = (props) => {
 	return (
-		<div style={{ textAlign: 'center' }}>
-			<h1>Welcome!</h1>
+		<div className={css.login}>
+			<h1>Добро пожаловать!</h1>
 		</div>
 	)
 }
